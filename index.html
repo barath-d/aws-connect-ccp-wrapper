@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AWS Connect CCP</title>
+</head>
+<body>
+  <div id="container"></div>
+
+  <script src="https://barathdharanivasan.my.connect.aws/ccp-v2/connect-streams.js"></script>
+  <script>
+    connect.core.initCCP(document.getElementById("container"), {
+      ccpUrl: "https://barathdharanivasan.my.connect.aws/ccp-v2/",
+      loginPopup: true,
+      loginPopupAutoClose: true,
+      region: "eu-west-2", // Replace with your AWS region if different
+      softphone: {
+        allowFramedSoftphone: true
+      }
+    });
+  </script>
+</body>
+</html>
